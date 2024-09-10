@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шкільний веб-застосунок</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Оцінки та Розділи</h1>
+        </header>
+        <div class="score-box">Бал: 85</div> <!-- Блок для балів -->
+        <nav>
+            <ul>
+                <li><a href="#" id="schedule-tab" class="active">Розклад</a></li>
+                <li><a href="#" id="homework-tab">Домашні завдання</a></li>
+                <li><a href="#" id="teachers-tab">Вчителі</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Заготовка для "Розклад" -->
+            <section id="schedule-section" class="tab-content active">
+                <h2>Розклад уроків</h2>
+                <div class="score-card">
+                    <p>Тут буде виведено інформацію про бали по розкладу.</p>
+                </div>
+            </section>
+
+            <!-- Заготовка для "Домашні завдання" -->
+            <section id="homework-section" class="tab-content">
+                <h2>Домашні завдання</h2>
+                <div class="score-card">
+                    <div class="task-card">
+                        <div class="task-image">
+                            <img src="https://via.placeholder.com/150" alt="Зображення завдання">
+                        </div>
+                        <div class="task-info">
+                            <h3 class="task-title">Написати твір</h3>
+                            <p class="task-description">Написати твір на тему "Моя родина". Повинен бути щонайменше 300 слів.</p>
+                            <p class="task-author">Від: <strong>Петренко Катерина Іванівна</strong></p>
+                            <div class="task-bottom">
+                                <span class="task-score">Бали: 10</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <div class="task-image">
+                            <img src="https://via.placeholder.com/150" alt="Зображення завдання">
+                        </div>
+                        <div class="task-info">
+                            <h3 class="task-title">Написати твір</h3>
+                            <p class="task-description">Написати твір на тему "Моя родина". Повинен бути щонайменше 300 слів.</p>
+                            <p class="task-author">Від: <strong>Петренко Катерина Іванівна</strong></p>
+                            <div class="task-bottom">
+                                <span class="task-score">Бали: 10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Заготовка для "Вчителі" -->
+            <section id="teachers-section" class="tab-content">
+                <h2>Вчителі</h2>
+                <div class="score-card">
+                    <p>Тут буде виведено інформацію про бали за предмети від кожного вчителя.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
